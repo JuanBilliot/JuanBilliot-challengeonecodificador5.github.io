@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Encriptador</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de texto</h1>
+        <form>
+            <label for="texto">Texto:</label>
+            <textarea id="texto"></textarea>
+            <div class="btn-group">
+                <button type="submit" onclick="encriptar(event)">Encriptar</button>
+                <button type="submit" onclick="desencriptar(event)">Desencriptar</button>
+                <button type="submit" onclick="copiar()" id="btn-copiar">Copiar</button>
+            </div>
+        </form>
+            <div class="resultado">
+                <label for="resultado">Resultado:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+    </div>
+                <script src="script.js"></script>
+    </body>
+</html>
